@@ -328,7 +328,7 @@ class FlutterMentionsState extends State<FlutterMentions> {
       final lengthMap = <LengthMap>[];
 
       // split on each word and generate a list with start & end position of each word.
-      controller!.value.text.split(RegExp(r'(\s)')).forEach((element) {
+      controller!.value.text.split(RegExp(r'(\.)')).forEach((element) {
         lengthMap.add(
             LengthMap(str: element, start: _pos, end: _pos + element.length));
 
